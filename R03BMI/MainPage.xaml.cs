@@ -18,7 +18,20 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            double h = Convert.ToInt32(heighit);
+            double w = Convert.ToInt32(weighit);
+            if (h <= 3)
+            {
+                double heighit = h / 100;
+            }
+            else if(w <=1000)
+            {
+                double weight = w / 100;
+            }
+            //計算
+            double bmi = ((h*h)/w);
+            string bm = bmi.ToString();
+            result.Text = bm;
         }
     }
 }
