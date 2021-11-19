@@ -31,7 +31,29 @@ namespace R03BMI
             //計算
             double bmi = ((h*h)/w);
             //表示
-            result.Text = Convert.ToString(bmi);
+             if (bmi=<18.5);
+             {
+                result.Text = (bmi"低体重（痩せ）\n");
+            }
+            else if(18.5=<bmi && bmi=<25.0);
+            {
+                result.Text =(bmi"普通体重\n");
+            }
+            else if(25.0=<bmi && bmi=<30.0);
+            {
+                result.Text =(bmi"肥満（1度）\n");
+            }
+            else if(30.0=<bmi && bmi=<35.0);
+            {
+                result.Text =(bmi"肥満（2度）\n");
+            }
+            else if(35.0=<bmi && bmi=<40.0);
+            {
+                result.Text =(bmi"肥満（3度）\n");
+            }
+            else(40.0=<bmi);
+            {
+                result.Text =(bmi"肥満（4度）\n");
             }
         }
     }
