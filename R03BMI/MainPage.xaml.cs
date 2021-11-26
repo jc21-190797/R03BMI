@@ -24,7 +24,7 @@ namespace R03BMI
             {
                 double heighit = h / 100;
             }
-            else if(w <=1000)
+            else　(w <=1000)
             {
                 double weighit = w / 100;
             }
