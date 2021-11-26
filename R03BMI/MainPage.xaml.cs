@@ -26,7 +26,7 @@ namespace R03BMI
             }
             else if(w <=1000)
             {
-                double weight = w / 100;
+                double weighit = w / 100;
             }
             //計算
             double bmi = ((h*h)/w);
