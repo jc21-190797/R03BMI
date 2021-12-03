@@ -16,7 +16,7 @@ namespace R03BMI
             creater.Text = "JK3A17 佐藤　勝貴";
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        public void Button_Clicked(object sender, EventArgs e)
         {
             double h = Convert.ToInt32(heighit);
             double w = Convert.ToInt32(weighit);
