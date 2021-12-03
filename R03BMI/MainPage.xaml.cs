@@ -21,7 +21,16 @@ namespace R03BMI
             
             double h = Convert.ToInt32(heighit);
             double w = Convert.ToInt32(weighit);
-            
+
+            if (h <= 3)
+            {
+                h = h / 100;
+            }
+            else if (w <= 1000)
+            {
+                w = w / 1000;
+            }
+
             //計算
             Double bmi = ((h * h) / w);
             //表示
